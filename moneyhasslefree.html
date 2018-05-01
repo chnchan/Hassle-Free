@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+
+  <header>
+    <title>Hassle-Free</title>
+    <link rel="stylesheet" href="src/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gamja+Flower" rel="stylesheet">
+  </header>
+
+  <body>
+    <div id="home" class="">
+      <h1>Splitting The Bill?<br>No Big Deal!</h1>
+    </div>
+
+    <div id="grocery" class="hide">
+      <div> <!-- GROCERY INPUTS -->
+        <div id="all" class="people col-6"> <!--All-->
+          <div class="leverBar">
+          </div>
+          <div class="name">
+            <span>All</span>
+          </div>
+
+          <div>
+            <div>
+              <div class="spacer"></div>
+
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+
+              <div class="addMore">
+              </div>
+            </div>
+
+            <div class="center">
+              <button data-parent="all" data-target="addMore" class="button2">+</button>
+            </div>
+
+            <div class="smallText hide">
+              sum: <div id="ALL" class="floatRight editable"></div>
+            </div>
+          </div>
+        </div>
+        <div id="personA" class="people col-6"> <!--A-->
+          <div class="leverBar center">
+            <label class="switch">
+              <input type="checkbox" checked=checked id="CBA" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="name">
+            <span class="">A</span>
+            <input class="nameInput hide" type="text" maxlength="10"/>
+          </div>
+          <div>
+            <div>
+              <div class="spacer"></div>
+
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+
+              <div class="addMore">
+              </div>
+            </div>
+
+            <div class="center">
+              <button data-parent="personA" data-target="addMore" class="button2">+</button>
+            </div>
+
+            <div class="smallText hide">
+              sum: <div class="floatRight editable"></div>
+            </div>
+          </div>
+        </div>
+        <div id="personB" class="people col-6"> <!--B-->
+          <div class="leverBar center">
+            <label class="switch">
+              <input type="checkbox" checked=checked id="CBB" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="name">
+            <span class="">B</span>
+            <input class="nameInput hide" type="text" maxlength="10"/>
+          </div>
+          <div>
+            <div>
+              <div class="spacer"></div>
+
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+
+              <div class="addMore">
+              </div>
+            </div>
+
+            <div class="center">
+              <button data-parent="personB" data-target="addMore" class="button2">+</button>
+            </div>
+
+            <div class="smallText hide">
+              sum: <div class="floatRight editable"></div>
+            </div>
+          </div>
+        </div>
+        <div id="personC" class="people col-6"> <!--C-->
+          <div class="leverBar center">
+            <label class="switch">
+              <input type="checkbox" checked=checked id="CBC" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="name">
+            <span class="">C</span>
+            <input class="nameInput hide" type="text" maxlength="10"/>
+          </div>
+          <div>
+            <div>
+              <div class="spacer"></div>
+
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+
+              <div class="addMore">
+              </div>
+            </div>
+
+            <div class="center">
+              <button data-parent="personC" data-target="addMore" class="button2">+</button>
+            </div>
+
+            <div class="smallText hide">
+              sum: <div class="floatRight editable"></div>
+            </div>
+          </div>
+        </div>
+        <div id="personD" class="people col-6"> <!--D-->
+          <div class="leverBar center">
+            <label class="switch">
+              <input type="checkbox" checked=checked id="CBD" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="name">
+            <span class="">D</span>
+            <input class="nameInput hide" type="text" maxlength="10"/>
+          </div>
+          <div>
+            <div>
+              <div class="spacer"></div>
+
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+
+              <div class="addMore">
+              </div>
+            </div>
+
+            <div class="center">
+              <button data-parent="personD" data-target="addMore" class="button2">+</button>
+            </div>
+
+            <div class="smallText hide">
+              sum: <div class="floatRight editable"></div>
+            </div>
+          </div>
+        </div>
+        <div id="personE" class="people col-6"> <!--E-->
+          <div class="leverBar center">
+            <label class="switch">
+              <input type="checkbox" checked=checked id="CBE" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="name">
+            <span class="">E</span>
+            <input class="nameInput hide" type="text" maxlength="10"/>
+          </div>
+          <div>
+            <div>
+              <div class="spacer"></div>
+
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+              <div class="center">
+                <input type="text" value="" class="input price" placeholder="$"/>
+                x
+                <input type="text" value="" class="input quantity" placeholder="1"/>
+              </div>
+
+              <div class="addMore">
+              </div>
+            </div>
+
+            <div class="center">
+              <button data-parent="personE" data-target="addMore" class="button2">+</button>
+            </div>
+
+            <div class="smallText hide">
+              sum: <div class="floatRight editable"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="result" class ="">
+      <div class="col-5 smallText">
+        <div class="results floatRight">0</div><div class="floatRight">$</div>
+      </div>
+      <div class="col-5 smallText">
+        <div class="results floatRight">0</div><div class="floatRight">$</div>
+      </div>
+      <div class="col-5 smallText">
+        <div class="results floatRight">0</div><div class="floatRight">$</div>
+      </div>
+      <div class="col-5 smallText">
+        <div class="results floatRight">0</div><div class="floatRight">$</div>
+      </div>
+      <div class="col-5 smallText">
+        <div class="results floatRight">0</div><div class="floatRight">$</div>
+      </div>
+    </div>
+
+
+    <div id="navbar" class="">
+      <div class="center">
+        <button id="groceryButton" data-parent="home navbar groceryButton" data-target="grocery groceryNavBar" class="button">Grocery!</button>
+      </div>
+
+      <div id="edge">
+
+      </div>
+
+      <div id="groceryNavBar" class="hide">
+        <div data-parent="grocery groceryNavBar" data-target="home navbar groceryButton" class="back">
+          &lt;- Back
+        </div>
+
+        <div data-parent="grocery" data-target="people" class="calc">
+          Calculate!
+        </div>
+      </div>
+    </div>
+    <script src="src/main.js"></script>
+  </body>
+</html>
